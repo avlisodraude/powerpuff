@@ -21,9 +21,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 Another url will be also generated to allow the testing in mobile devices.
 
 ## Tested in:
-Chrome browser
+- Chrome browser
 
-Iphone X (Safari browser)
+- Iphone X (Safari browser)
 
 ## Demo(s)
 ![demo](./powerpuff.gif)
