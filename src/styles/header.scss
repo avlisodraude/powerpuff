@@ -1,0 +1,23 @@
+header {
+  .header-identity {
+    display: flex;
+  }
+
+  nav {
+    margin: 2rem 0;
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+    }
+
+    span, a {
+      color: #779397;
+    }
+
+    .activePage {
+      border-bottom: 1px solid red;
+      padding-bottom: 0.5rem;
+    }
+  }
+}

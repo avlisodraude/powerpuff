@@ -1,0 +1,43 @@
+.episode-details {
+  background-color: #fcfcfc;
+  border: 1px solid #f1f1f1;
+  border-radius: 6px;
+  display: flex;
+  padding: 2rem;
+
+  img {
+    flex-basis: 250px;
+  }
+
+  span {
+    flex-basis: 250px;
+    flex-grow: 2;
+    padding: 0 1rem;
+
+    p:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    flex-basis: 250px;
+    flex-grow: 1;
+    margin-top: 0;
+
+    li {
+      list-style-type: none;
+    }
+  }
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+
+    span, ul, img {
+      flex-basis: auto;
+      margin-bottom: 1rem;
+    }
+    span, ul {
+      padding: 0;
+    }
+  }
+}

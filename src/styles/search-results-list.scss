@@ -1,0 +1,54 @@
+.search-results-list {
+  ul {
+    color: #333;
+
+    li {
+      background-color: #f2f7f8;
+      border-bottom: 1px solid #f1f1f1;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      padding: 1.4rem;
+
+      h2 {
+        margin: 1rem 0;
+      }
+
+      a {
+        &:link {
+          color: #333;
+        }
+
+        &:visited {
+          color: #999;
+        }
+
+        &:hover {
+          color: #779397;
+        }
+      }
+
+      .show-details-container {
+        display: flex;
+        margin-bottom: 1rem;
+
+        img {
+          border: 2px solid white;
+          border-radius: 10px;
+          max-width: 20%;
+        }
+
+        span {
+          padding: 0 2rem;
+          margin: 0;
+        }
+
+        @media (max-width: 650px) {
+          flex-direction: column;
+          span {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

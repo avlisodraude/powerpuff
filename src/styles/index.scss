@@ -1,0 +1,16 @@
+@import "search-bar";
+@import "header";
+@import "show-search";
+@import "search-results-list";
+@import "show-details";
+@import "show-info";
+@import "episodes-list";
+@import "episode";
+
+* {
+  font-family: 'Inria Serif', serif;
+}
+
+#root {
+  padding: 0 2rem;
+}

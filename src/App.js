@@ -1,26 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
+import Show from './components/Show';
+import NotFound from './components/NotFound';
+import Episode from "./components/Episode";
+import ShowsSearch from "./components/ShowsSearch";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+    <BrowserRouter>
+        <main>
+            <Switch>
+                <Redirect from="/home" to="/"/>
+                <Route exact path="/" component={ShowsSearch}/>
+                <Route path="/show/:showId" component={Show}/>
+                <Route path="/episode/:showId/:seasonId/:episodeNumber" component={Episode}/>
+                <Route component={NotFound}/>
+            </Switch>
+        </main>
+    </BrowserRouter>
+);
 
 export default App;
