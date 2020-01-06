@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## How to install / run the project.
 Before cloning the project make sure that you are running Node and NPM latest stable versions.
 
-After cloning the project run the following commands in your terminal terminal from the root folder (where project.json is located).
+After cloning the project run the following commands in your terminal from the root folder (where project.json is located).
 
 ```$xslt
 npm install
